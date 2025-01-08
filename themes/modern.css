@@ -1,0 +1,174 @@
+/* Modern theme for Marp */
+@theme modern {
+  /* ベーステーマの継承 */
+  @import 'default';
+
+  /* カラーパレット */
+  :root {
+    --primary: #2c3e50;
+    --secondary: #34495e;
+    --accent: #3498db;
+    --background: #ffffff;
+    --text: #2c3e50;
+    --code-bg: #f8f9fa;
+    --link: #3498db;
+    --shadow: rgba(0, 0, 0, 0.1);
+  }
+
+  /* 全体のスタイル */
+  section {
+    background: var(--background);
+    color: var(--text);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding: 2rem;
+  }
+
+  /* 見出しのスタイル */
+  h1 {
+    color: var(--primary);
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    color: var(--secondary);
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0.8em;
+  }
+
+  h3 {
+    color: var(--secondary);
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 0.6em;
+  }
+
+  /* リストのスタイル */
+  ul, ol {
+    margin: 1em 0;
+    line-height: 1.6;
+    padding-left: 1.2em;
+  }
+
+  li {
+    margin: 0.5em 0;
+  }
+
+  /* コードブロックのスタイル */
+  code {
+    background: var(--code-bg);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  pre {
+    background: var(--code-bg);
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px var(--shadow);
+  }
+
+  /* リンクのスタイル */
+  a {
+    color: var(--link);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* 表のスタイル */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 0.8em;
+    text-align: left;
+  }
+
+  th {
+    background: var(--secondary);
+    color: white;
+  }
+
+  /* 特殊なレイアウトクラス */
+  section.lead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  section.lead h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+
+  section.lead h2 {
+    font-size: 2em;
+    color: var(--accent);
+  }
+
+  /* カード要素 */
+  .card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--shadow);
+    margin: 1em 0;
+  }
+
+  /* グリッドレイアウト */
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+    margin: 1em 0;
+  }
+
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* アニメーション */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .animate-fade {
+    animation: fadeIn 1s ease-out;
+  }
+
+  /* レスポンシブ対応 */
+  @media (max-width: 768px) {
+    section {
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    .grid-2, .grid-3 {
+      grid-template-columns: 1fr;
+    }
+  }
+}

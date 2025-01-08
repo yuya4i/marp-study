@@ -6,7 +6,10 @@
     "start": "marp --server slides",
     "build": "marp --html --allow-local-files slides/index.md",
     "pdf": "marp --pdf --allow-local-files slides/index.md",
-    "watch": "marp --watch --html slides/index.md"
+    "watch": "marp --watch --html slides/index.md",
+    "theme-example": "marp --theme-set ./themes/modern.css themes/example.md",
+    "theme-example:pdf": "marp --theme-set ./themes/modern.css --pdf themes/example.md",
+    "theme-example:pptx": "marp --theme-set ./themes/modern.css --pptx themes/example.md"
   },
   "keywords": [],
   "author": "",
