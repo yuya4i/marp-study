@@ -85,5 +85,53 @@ function hello() {
 
 ---
 
+## 背景とデザイン要素
+
+<!-- _class: bg-gradient -->
+![bg](https://source.unsplash.com/random/1280x720?nature)
+![bg brightness:0.5]()
+
+### 背景画像とグラデーションの組み合わせ
+テキストは明るく表示されます
+
+---
+
+## 図形の作成
+
+<div class="shapes">
+  <div class="circle"></div>
+  <div class="square"></div>
+  <div class="triangle"></div>
+</div>
+
+基本的な図形はCSSで作成可能
+
+---
+
+## 多角形とイラスト
+
+<div class="polygon-container">
+  <div class="hexagon"></div>
+  <div class="pentagon"></div>
+  <div class="star"></div>
+</div>
+
+SVGを使用した複雑な図形
+
+---
+
+## アイコンとシンボル
+
+<div class="icon-grid">
+  <div class="icon">🎯</div>
+  <div class="icon">💡</div>
+  <div class="icon">⚡</div>
+  <div class="icon">🔑</div>
+</div>
+
+絵文字やアイコンフォントの活用
+
+---
+
 <!-- _class: lead -->
 # ご清聴ありがとうございました

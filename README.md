@@ -151,6 +151,54 @@ npm run theme-example:pptx
 - スコープ付きスタイルで部分的な適用
 - コメントで各スタイルの目的を明記
 
+### 背景と図形の作成
+
+#### 背景の設定
+1. 画像背景
+```markdown
+![bg](画像のURL)
+```
+
+2. 画像の明るさ調整
+```markdown
+![bg brightness:0.5](画像のURL)
+```
+
+3. グラデーション背景
+```markdown
+<!-- _class: bg-gradient -->
+```
+
+#### 基本図形の作成
+```html
+<div class="shapes">
+  <div class="circle"></div>  <!-- 円形 -->
+  <div class="square"></div>  <!-- 正方形 -->
+  <div class="triangle"></div>  <!-- 三角形 -->
+</div>
+```
+
+#### 多角形の作成
+```html
+<div class="polygon-container">
+  <div class="hexagon"></div>   <!-- 六角形 -->
+  <div class="pentagon"></div>  <!-- 五角形 -->
+  <div class="star"></div>      <!-- 星形 -->
+</div>
+```
+
+#### アイコンとシンボル
+```html
+<div class="icon-grid">
+  <div class="icon">🎯</div>
+  <div class="icon">💡</div>
+  <div class="icon">⚡</div>
+  <div class="icon">🔑</div>
+</div>
+```
+
+これらの要素は`themes/example.md`にサンプルとして実装されています。
+
 ## スライドの構成
 
 - 基本的な構成方法
