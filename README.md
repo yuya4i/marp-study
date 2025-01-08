@@ -154,20 +154,22 @@ npm run theme-example:pptx
 ### 背景と図形の作成
 
 #### 背景の設定
-1. 画像背景
+1. アクセントカラーの背景
 ```markdown
-![bg](画像のURL)
+<!-- _class: bg-colored -->
 ```
 
-2. 画像の明るさ調整
+2. プライマリカラーの背景
 ```markdown
-![bg brightness:0.5](画像のURL)
+<!-- _class: bg-primary -->
 ```
 
-3. グラデーション背景
+3. セカンダリカラーの背景
 ```markdown
-<!-- _class: bg-gradient -->
+<!-- _class: bg-secondary -->
 ```
+
+各背景色は自動的にテキストを白色で表示し、コントラストを確保します。
 
 #### 基本図形の作成
 ```html

@@ -85,14 +85,26 @@ function hello() {
 
 ---
 
-## 背景とデザイン要素
+## 背景の設定例
 
-<!-- _class: bg-gradient -->
-![bg](https://source.unsplash.com/random/1280x720?nature)
-![bg brightness:0.5]()
+<!-- _class: bg-colored -->
 
-### 背景画像とグラデーションの組み合わせ
-テキストは明るく表示されます
+### アクセントカラーの背景
+テキストは白色で表示
+
+---
+
+<!-- _class: bg-primary -->
+
+### プライマリカラーの背景
+重要なセクションの強調に
+
+---
+
+<!-- _class: bg-secondary -->
+
+### セカンダリカラーの背景
+補足的な情報の表示に
 
 ---
 

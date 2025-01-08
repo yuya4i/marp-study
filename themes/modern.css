@@ -176,8 +176,36 @@
   }
 
   /* 背景スタイル */
-  section.bg-gradient {
-    background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+  section.bg-colored {
+    background-color: var(--accent) !important;
+    color: white;
+  }
+
+  section.bg-colored h1,
+  section.bg-colored h2,
+  section.bg-colored h3 {
+    color: white;
+  }
+
+  section.bg-primary {
+    background-color: var(--primary) !important;
+    color: white;
+  }
+
+  section.bg-primary h1,
+  section.bg-primary h2,
+  section.bg-primary h3 {
+    color: white;
+  }
+
+  section.bg-secondary {
+    background-color: var(--secondary) !important;
+    color: white;
+  }
+
+  section.bg-secondary h1,
+  section.bg-secondary h2,
+  section.bg-secondary h3 {
     color: white;
   }
 
