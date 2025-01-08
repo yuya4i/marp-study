@@ -110,18 +110,35 @@ mkdir themes
 ```
 
 ### テーマの適用
+
 1. スライドのYAMLフロントマターでテーマを指定
 ```markdown
 ---
 marp: true
-theme: custom
+theme: modern
 ---
 ```
 
 2. CLIでテーマを指定して実行
 ```bash
-marp --theme-set ./themes/custom.css slides/index.md
+# HTMLファイルの生成
+npm run theme-example
+
+# PDFファイルの生成
+npm run theme-example:pdf
+
+# PowerPointファイルの生成
+npm run theme-example:pptx
 ```
+
+3. サンプルスライドの確認
+`themes/example.md`にモダンテーマを使用したサンプルスライドが用意されています。
+以下の機能のデモが含まれています：
+- 基本的なテキストスタイル
+- コードブロックの表示
+- 表のスタイリング
+- グリッドレイアウト
+- アニメーション効果
 
 ### テーマの共有
 1. テーマファイルをnpmパッケージとして公開
