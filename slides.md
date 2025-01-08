@@ -7,17 +7,43 @@ footer: "© 2024 Marp Study"
 style: |
   section {
     background-color: #ffffff;
+    font-size: 1.5em;
   }
   h1 {
     color: #2c3e50;
+    font-size: 2.5em;
   }
   h2 {
     color: #34495e;
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.8em;
+  }
+  ul, ol {
+    margin: 1em 0;
+    line-height: 1.6;
+  }
+  code {
+    font-size: 0.9em;
+  }
+  table {
+    font-size: 0.9em;
+  }
+  .grid-container {
+    display: grid;
+    gap: 1em;
+    margin: 1em 0;
+  }
+  .card {
+    padding: 1em;
+    border-radius: 8px;
+    background: #f8f9fa;
   }
 ---
 
-# Marpスライド作成ガイド
-基本から応用まで
+# Marpスライド作成ガイド <!-- fit -->
+基本から応用まで <!-- fit -->
 
 ---
 

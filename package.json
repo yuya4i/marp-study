@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "marp --server .",
-    "build": "marp --html --allow-local-files slides.md",
-    "pdf": "marp --pdf --allow-local-files slides.md",
-    "watch": "marp --watch --html slides.md"
+    "start": "marp --server slides",
+    "build": "marp --html --allow-local-files slides/index.md",
+    "pdf": "marp --pdf --allow-local-files slides/index.md",
+    "watch": "marp --watch --html slides/index.md"
   },
   "keywords": [],
   "author": "",
