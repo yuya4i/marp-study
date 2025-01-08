@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "start": "marp --server slides",
-    "build": "marp --html --allow-local-files slides/index.md",
-    "pdf": "marp --pdf --allow-local-files slides/index.md",
-    "watch": "marp --watch --html slides/index.md",
+    "build": "marp --html --allow-local-files slides/index.md -o slides/index.html",
+    "pdf": "marp --pdf --allow-local-files slides/index.md -o slides/index.pdf",
+    "watch": "marp --watch --html slides/index.md -o slides/index.html",
     "theme-example": "marp --theme-set ./themes/modern.css --html themes/example.md -o themes/example.html",
     "theme-example:server": "marp --theme-set ./themes/modern.css --server themes",
     "theme-example:pdf": "marp --theme-set ./themes/modern.css --pdf themes/example.md",
